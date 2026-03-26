@@ -1,0 +1,102 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lux-black: #0A0A0A;
+  --lux-dark: #121212;
+  --lux-card: #181818;
+  --lux-white: #F0EDE6;
+  --lux-silver: #C8C8C8;
+  --lux-muted: #999999;
+  --lux-aqua: #4DA8DA;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--lux-black);
+  color: var(--lux-white);
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 스크롤 애니메이션 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@layer components {
+
+  .section-padding {
+    @apply px-6 py-28 md:px-16 md:py-36;
+  }
+
+  .container-main {
+    @apply max-w-6xl mx-auto;
+  }
+
+  /* 섹션 레이블 */
+  .section-label {
+    @apply text-[11px] tracking-[0.25em] uppercase text-white/60 font-medium;
+  }
+
+  /* 섹션 타이틀 — 세리프 */
+  .section-title {
+    @apply text-3xl md:text-[42px] font-bold leading-snug;
+    font-family: 'Noto Serif KR', Georgia, serif;
+    color: var(--lux-white);
+  }
+
+  /* 섹션 서브타이틀 */
+  .section-subtitle {
+    @apply text-sm md:text-base leading-relaxed;
+    color: var(--lux-silver);
+  }
+
+  /* 주 버튼 — 흰색 */
+  .btn-primary {
+    @apply inline-flex items-center gap-2.5
+           bg-white text-[#0A0A0A]
+           px-8 py-4 text-sm font-semibold tracking-[0.12em] uppercase
+           transition-all duration-300
+           hover:bg-lux-white active:scale-[0.97];
+  }
+
+  /* 보조 버튼 — 테두리 */
+  .btn-outline {
+    @apply inline-flex items-center gap-2.5
+           border border-white/30 text-white
+           px-8 py-4 text-sm font-semibold tracking-[0.12em] uppercase
+           transition-all duration-300
+           hover:border-white hover:text-white active:scale-[0.97];
+  }
+
+  /* 카카오 버튼 */
+  .btn-kakao {
+    @apply inline-flex items-center gap-2.5
+           bg-[#FEE500] text-[#1A1A1A]
+           px-8 py-4 text-sm font-semibold tracking-[0.12em]
+           transition-all duration-300
+           hover:bg-[#F0D800] active:scale-[0.97];
+  }
+
+  /* 구분선 */
+  .lux-divider {
+    @apply border-t border-white/[0.06];
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(BASE=\"/Users/hellomymac/Desktop/02. muni/03. 제품/02. 제품 자료/01. PVC Board/08. aquashield-site\")",
+      "Bash(mkdir -p \"$BASE/app\" \"$BASE/components\" \"$BASE/data\" \"$BASE/public/images\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "WebSearch",
+      "Bash(find '/Users/hellomymac/Desktop/02. muni/03. 제품/02. 제품 자료/01. PVC Board/08. aquashield-site' -name 물1* -o -name *board*size* -o -name *BOARD*)",
+      "Bash(find /Users/hellomymac -maxdepth 6 -name *board*size* -o -name *BOARD*SIZE*)",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(cp \"/Users/hellomymac/Desktop/02. muni/03. 제품/02. 제품 자료/01. PVC Board/05. 제품사진/$f\" \"/Users/hellomymac/Desktop/02. muni/03. 제품/02. 제품 자료/01. PVC Board/08. aquashield-site/public/images/$f\")",
+      "Bash(echo \"$f 복사 완료\")",
+      "Bash(done)"
+    ]
+  }
+}
