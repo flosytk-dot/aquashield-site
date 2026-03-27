@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeUp from "./FadeUp";
 
 const problems = [
@@ -36,6 +37,17 @@ export default function Problems() {
           <p className="text-base text-white/70 max-w-md mx-auto leading-relaxed">
             습기가 많은 공간에 기존의 PB·MDF를 쓰면 결국 이렇게 됩니다.
           </p>
+        </FadeUp>
+
+        <FadeUp className="mb-16">
+          <div className="relative w-full aspect-[16/9] max-w-4xl mx-auto overflow-hidden rounded">
+            <Image
+              src="/images/pb-mdf.jpg"
+              alt="PB·MDF 문제점"
+              fill
+              className="object-cover"
+            />
+          </div>
         </FadeUp>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
