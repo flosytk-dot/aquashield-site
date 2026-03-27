@@ -42,7 +42,7 @@ export default function Problems() {
           {problems.map((p, i) => (
             <FadeUp key={p.title} delay={i * 100} className="h-full">
               <div className="bg-white p-10 group hover:shadow-lg transition-shadow duration-300 h-full">
-                <span className="text-[40px] font-serif font-bold text-[#DDDDDD]/20 block mb-4">{p.num}</span>
+                <span className="text-[64px] font-bold text-[#CCCCCC]/50 leading-none block mb-6 select-none font-serif">{p.num}</span>
                 <h3 className="text-base font-bold text-[#111111] mb-3 tracking-wide">{p.title}</h3>
                 <p className="text-sm text-[#444444] leading-[1.8]">{p.desc}</p>
               </div>
