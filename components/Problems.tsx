@@ -40,7 +40,7 @@ export default function Problems() {
         </FadeUp>
 
         <FadeUp className="mb-16">
-          <div className="relative w-full aspect-[16/9] max-w-4xl mx-auto overflow-hidden rounded">
+          <div className="relative w-full aspect-[3.4/1] mx-auto overflow-hidden rounded">
             <Image
               src="/images/pb-mdf.jpg"
               alt="PB·MDF 문제점"
