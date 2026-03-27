@@ -8,6 +8,10 @@ const spaces = [
   { title: "상업 공간",     tags: ["카페", "레스토랑", "미용실"],  desc: "위생적이고 견고한 상업공간 마감재.",         image: "/images/상업공간.jpg" },
   { title: "야외 & 베란다", tags: ["베란다", "테라스"],            desc: "UV 코팅으로 야외 사용도 가능합니다.",        image: "/images/베란다.jpg" },
   { title: "어린이방",      tags: ["교실", "유치원"],              desc: "친환경 소재로 어린이 공간에도 안전합니다.",  image: "/images/유치원.jpg" },
+  { title: "아트월",        tags: ["벽면 마감", "인테리어"],       desc: "세련된 벽면 마감으로 공간의 품격을 높입니다.", image: "/images/아트월.jpg" },
+  { title: "큐비클",        tags: ["화장실 칸막이", "파티션"],     desc: "습기에 강해 화장실 칸막이에 최적입니다.",     image: "/images/큐비클.jpg" },
+  { title: "광고판",        tags: ["사인보드", "간판"],            desc: "내구성이 뛰어나 옥외 광고판에도 활용됩니다.", image: "/images/광고판.jpg" },
+  { title: "분체도장",      tags: ["도장 마감", "산업용"],         desc: "분체도장 베이스로 활용이 가능합니다.",         image: "/images/분체도장.jpg" },
 ];
 
 export default function Applications() {
