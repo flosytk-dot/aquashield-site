@@ -44,7 +44,7 @@ export const SITE_CONFIG = {
 
   // 색상 라인업 (이름 + 색상코드 또는 이미지 경로)
   colors: [
-    { name: "백골 (원하는 필름지 부착 가능)", image: "", hex: "#FFFFFF" },
+    { name: "백골", subtitle: "원하는 필름지를 직접 시공할 수 있는 상태로 출고", image: "", hex: "#FFFFFF" },
     { name: "화이트", image: "/images/흰색.jpg" },
     { name: "아이보리", image: "/images/아이보리.jpg" },
     { name: "라이트 그레이", image: "/images/라이트그레이.jpg" },

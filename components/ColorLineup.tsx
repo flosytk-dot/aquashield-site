@@ -22,7 +22,7 @@ export default function ColorLineup() {
         {/* 컬러 그리드 — 5개이므로 5열 */}
         <FadeUp>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-            {colors.map((color: { name: string; image?: string; hex?: string }) => (
+            {colors.map((color: { name: string; subtitle?: string; image?: string; hex?: string }) => (
               <div key={color.name} className="group cursor-pointer">
                 <div
                   className="w-full aspect-square mb-4 relative overflow-hidden transition-all duration-300 group-hover:scale-[0.97] border border-white/10 group-hover:border-white/30 group-hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
@@ -38,6 +38,9 @@ export default function ColorLineup() {
                   )}
                 </div>
                 <p className="text-sm font-medium text-white/90 tracking-wide">{color.name}</p>
+                {color.subtitle && (
+                  <p className="text-xs text-white/50 mt-1 leading-relaxed">*{color.subtitle}</p>
+                )}
               </div>
             ))}
           </div>
