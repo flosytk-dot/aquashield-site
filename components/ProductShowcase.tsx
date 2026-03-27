@@ -7,7 +7,7 @@ export default function ProductShowcase() {
       {/* 전체 화면 이미지 배경 */}
       <div className="relative w-full h-[70vh] md:h-[85vh]">
         <Image
-          src="/images/product-showcase.jpg"
+          src="/images/product-showcase2.jpg"
           alt="AQUA SHIELD 방수 PVC 보드 4가지 컬러 + 백골"
           fill
           className="object-contain bg-[#E8E6E2]"
