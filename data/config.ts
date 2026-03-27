@@ -21,7 +21,7 @@ export const SITE_CONFIG = {
     phoneDisplay: "010-5639-4982",     // ← 화면에 표시될 전화번호
     kakaoLink: "http://pf.kakao.com/_dzVyn", // ← 카카오톡 오픈채팅 링크
     sampleRequestLink: "http://pf.kakao.com/_dzVyn", // ← 샘플 요청 링크 (카카오 or 폼)
-    email: "contact@aquashield.co.kr", // ← 이메일 (선택)
+    email: "munion@mymunion.com", // ← 이메일 (선택)
     businessHours: "평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)",
   },
 
