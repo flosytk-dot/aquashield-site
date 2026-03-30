@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
   companyName: "주식회사 무니온",
   tagline: "물에 강한 방수 PVC 보드",
   description:
-    "습기·물·곰팡이에도 끄떡없는 AQUA SHIELD 방수 PVC 보드. 주방, 욕실, 상업공간 어디서든 오래도록 아름답게.",
+    "방수보드 PVC보드 전문 AQUA SHIELD. 습기·물·곰팡이에 강한 방수 PVC 보드로 MDF·합판을 대체하세요. 욕실, 주방, 반지하, 베란다, 큐비클, 아트월 등 다양한 인테리어 자재로 활용 가능합니다.",
 
   // SEO
   siteUrl: "https://aquashield.co.kr", // 실제 도메인으로 변경하세요
