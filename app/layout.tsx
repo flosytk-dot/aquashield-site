@@ -109,8 +109,40 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "AQUA SHIELD",
+    alternateName: "아쿠아쉴드",
+    url: "https://aquashield-site.vercel.app",
+  };
+
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AQUA SHIELD",
+    alternateName: "아쿠아쉴드",
+    url: "https://aquashield-site.vercel.app",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+82-10-5639-4982",
+      contactType: "sales",
+      availableLanguage: "Korean",
+    },
+  };
+
   return (
     <html lang="ko">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
